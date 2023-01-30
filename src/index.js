@@ -1,8 +1,20 @@
+import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import "./components/Navbar/Navbar.css";
-import App from "./App";
+import "./components/AboutUs/aboutus.css";
+import "./components/Auth/auth.css";
+import "./components/Cart/cart.css";
+import "./components/ContactUs/contactus.css";
+import "./components/Footer/footer.css";
+import "./components/Home/home.css";
+import "./components/Navbar/navbar.css";
+import "./components/NotFound/notfound.css";
+import "./components/Product/product_css/addProduct.css";
+import "./components/Product/product_css/editProduct.css";
+import "./components/Product/product_css/productCard.css";
+import "./components/Product/product_css/productDetails.css";
+import "./components/Product/product_css/productList.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
