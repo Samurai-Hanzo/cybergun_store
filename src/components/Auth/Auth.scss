@@ -1,0 +1,60 @@
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    margin-top: 60px;
+    font-size: 41px;
+    margin-bottom: 18px;
+  }
+
+  input {
+    width: 510px;
+    height: 35px;
+    border-radius: 2px;
+  }
+
+  .passwordInput {
+    margin-top: 20px;
+    height: 30px;
+  }
+
+  button {
+    background-color: black;
+    width: 540px;
+    justify-content: center;
+    height: 35px;
+    border-radius: 2px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+}
+
+.login {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 98px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.password {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 38px;
+  font-size: 16px;
+  font-weight: 500;
+}
