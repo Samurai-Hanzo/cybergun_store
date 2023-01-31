@@ -1,20 +1,16 @@
 import "./App.css";
-
 import Navbar from "./components/Navbar/Navbar";
-
-import Auth from "./components/Auth/Auth";
-
-import ProductCard from "./components/Product/ProductCard";
+import Footer from "./components/Footer/Footer";
+import MainRoutes from "./MainRoutes";
 
 function App() {
-  return (
-    <div className="App">
-          <Navbar />
-   <Auth />
-
-      <ProductCard />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navbar />
+            <MainRoutes />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
