@@ -3,6 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./components/AboutUs/aboutus.css";
+import "./components/Header/Header.css";
+import "./components/StoreHeader/StoreHeader.css";
 import "./components/Auth/auth.css";
 import "./components/Cart/cart.css";
 import "./components/ContactUs/contactus.css";
