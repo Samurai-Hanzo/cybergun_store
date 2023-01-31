@@ -1,7 +1,11 @@
 import React from "react";
 
 const AboutUs = () => {
-    return <div></div>;
+    return (
+        <div>
+            <p>About us</p>
+        </div>
+    );
 };
 
 export default AboutUs;

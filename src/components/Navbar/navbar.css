@@ -1,51 +1,51 @@
 * {
-  font-family: "Advent Pro", sans-serif;
+    font-family: "Advent Pro", sans-serif;
 }
 span {
-  font-weight: 500;
-  font-size: 18px;
+    font-weight: 500;
+    font-size: 18px;
 }
 .container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 .navbar-wrapper {
-  padding: 50px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 20px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .cart-icon-wrapper {
-  background-color: #e7e7e7;
-  padding: 6px;
-  border-radius: 5px;
-  margin-left: 15px;
+    background-color: #e7e7e7;
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 15px;
 }
 .cart-icon {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .select {
-  border: none;
-  font-weight: 500;
-  font-size: 18px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
 }
 .login-wrapper {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .menu-wrapper {
-  max-width: 350px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
