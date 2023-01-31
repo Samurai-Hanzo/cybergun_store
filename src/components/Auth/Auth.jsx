@@ -9,7 +9,7 @@ const Auth = () => {
     <div className="container">
       <div className="logo">cybergun</div>
       <div className="wrapper">
-        <h1 className="">AUTH</h1>
+        <h1 className="">AUTHORISATION</h1>
         <TextField id="outlined-basic" label="LOGIN" size="small" />
         <TextField
           size="small"
