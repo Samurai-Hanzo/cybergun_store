@@ -29,16 +29,16 @@ const Footer = () => {
                         <p className="fw600"> US</p>
                         <div className="linksWrapper">
                             <div>
-                                <img src="" alt="network" />
+                                <i class="fa-brands fa-facebook"></i>
                             </div>
                             <div>
-                                <img src="" alt="twitter" />
+                                <i class="fa-brands fa-twitter"></i>
                             </div>
                             <div>
-                                <img src="" alt="youtube" />
+                                <i class="fa-brands fa-youtube"></i>
                             </div>
                             <div>
-                                <img src="" alt="instagram" />
+                                <i class="fa-brands fa-instagram"></i>
                             </div>
                         </div>
                     </div>
