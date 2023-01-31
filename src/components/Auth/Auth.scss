@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  font-family: "Advent Pro";
 }
 
 .container {
@@ -9,6 +10,8 @@ body {
 
 .logo {
   margin-top: 40px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -19,12 +22,15 @@ body {
     margin-top: 60px;
     font-size: 41px;
     margin-bottom: 18px;
+    font-family: "Inter";
+    font-weight: 400;
   }
 
   input {
     width: 510px;
     height: 35px;
     border-radius: 2px;
+    border-color: black;
   }
 
   .passwordInput {
@@ -36,10 +42,20 @@ body {
     background-color: black;
     width: 540px;
     justify-content: center;
-    height: 35px;
+    height: 45px;
     border-radius: 2px;
     font-size: 16px;
     margin-top: 40px;
+    font-family: "Advent Pro";
+  }
+
+  button:hover {
+    background-color: red;
+  }
+
+  p {
+    font-size: 22px;
+    cursor: pointer;
   }
 }
 

@@ -1,10 +1,11 @@
 import "./App.css";
-import Auth from "./components/Auth/Auth";
+import Footer from "./components/Footer/Footer";
+import Review from "./components/Review/Review";
 
 function App() {
   return (
     <div className="App">
-      <Auth />
+      <Footer />
     </div>
   );
 }

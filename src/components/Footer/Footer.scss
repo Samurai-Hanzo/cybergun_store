@@ -1,0 +1,39 @@
+.footer {
+  color: white;
+  background-color: black;
+  height: 417px;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+}
+.fw600 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+}
+
+.linksWrapper {
+  div {
+    margin-top: 10px;
+  }
+}
