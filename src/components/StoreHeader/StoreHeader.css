@@ -1,0 +1,26 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.header-pic {
+  width: 514px;
+  height: 285px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+}
+.header-title {
+  font-size: 64px;
+  font-weight: normal;
+  margin: 0;
+}
+.header-desc {
+  width: 420px;
+  font-size: 20px;
+  font-weight: regular;
+}
