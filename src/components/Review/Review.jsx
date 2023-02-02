@@ -1,43 +1,46 @@
 import React from "react";
-import "./Review.scss";
 
-import "../../assets/details/review.svg";
+import userImg from "../../assets/details/review.svg";
 
 export default function Review() {
   return (
     <div className="container">
       <div className="wrapper">
-        <h2>REVIEW</h2>
-        <p className="pUnderH2">
+        <h2 className="rewiev-title">REVIEW</h2>
+        <p className="rewiev-desc">
           “It's amazing what has helped me learn about my team. I don't worry
           about blindspots anymore, and 1-on-1s have never been more productive.
           The team loves it.”
         </p>
         <div className="usersWrapper">
-          <div className="users">
-            <img
-              src="/cybergun_store/src/assets//details/review.svg"
-              alt="chel"
-            />
+          <div className="user">
+            <div className="user-img">
+              <img src={userImg} alt="chel" />
+            </div>
+
             <div>
-              <p>Jorge Robertson</p>
-              <p>CS at Google</p>
+              <p className="user-name">Jorge Robertson</p>
+              <p className="user-comment">CS at Google</p>
             </div>
           </div>
 
-          <div className="users">
-            <img src="" alt="chel" />
+          <div className="user">
+            <div className="user-img">
+              <img src={userImg} alt="chel" />
+            </div>
             <div>
-              <p>Jorge Robertson</p>
-              <p>CS at Google</p>
+              <p className="user-name">Jorge Robertson</p>
+              <p className="user-comment">CS at Google</p>
             </div>
           </div>
 
-          <div className="users">
-            <img src="" alt="chel" />
+          <div className="user">
+            <div className="user-img">
+              <img src={userImg} alt="chel" />
+            </div>
             <div>
-              <p>Jorge Robertson</p>
-              <p>CS at Google</p>
+              <p className="user-name">Jorge Robertson</p>
+              <p className="user-comment">CS at Google</p>
             </div>
           </div>
         </div>
