@@ -1,10 +1,12 @@
 import React from "react";
-import Home from "../components/Home/Home";
+import Header from "../components/Header/Header";
+import Video from "../components/Video/Video";
 
 const HomePage = () => {
     return (
         <div>
-            <Home />
+            <Header />
+            <Video />
         </div>
     );
 };
