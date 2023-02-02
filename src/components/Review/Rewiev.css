@@ -1,0 +1,81 @@
+body {
+  box-sizing: border-box;
+  font-family: "Advent Pro";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.rewiev-title {
+  font-size: 42px;
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 600;
+  color: #35414b;
+  margin-bottom: 0;
+}
+
+.rewiev-desc {
+  width: 470px;
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  text-align: center;
+
+  color: #4e5a65;
+}
+
+.usersWrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+  width: 100%;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-top: transparent 2px solid;
+}
+
+/* .user:hover {
+  border-top: #35414b 2px solid;
+} */
+.user::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: 1s;
+}
+.user:hover::after {
+  width: 100%;
+}
+
+.user-img {
+  margin-right: 16px;
+}
+.user-name {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+.user-comment {
+  margin-top: 8px;
+}

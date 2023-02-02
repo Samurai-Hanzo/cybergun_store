@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-family: "Advent Pro";
+}
+span {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 40px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 160px;
+}
+
+.btn-wrapper {
+  max-width: 540px;
+  width: 100%;
+}
+.auth-titile {
+  margin-top: 60px;
+  font-size: 41px;
+  margin-bottom: 18px;
+  font-weight: normal;
+}

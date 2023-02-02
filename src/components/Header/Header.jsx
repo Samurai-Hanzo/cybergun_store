@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderPic from "../../assets/details/IMAGE 2023-01-30 17:39:45.jpg";
+import HeaderPic from "../../assets/details/header-pic.jpg";
 
 const Header = () => {
   return (
