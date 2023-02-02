@@ -13,29 +13,28 @@ import { Route, Routes } from "react-router-dom";
 import { useAuth } from "./contexts/AuthContextProvider";
 
 const MainRoutes = () => {
-    const PUBLIC_ROUTES = [
-        { link: "/", element: <HomePage />, id: 1 },
-        { link: "/auth", element: <AuthPage />, id: 2 },
-        { link: "/products", element: <ProductPage />, id: 3 },
-        { link: "/products/:id", element: <ProductDetailsPage />, id: 4 },
-        { link: "*", element: <NotFoundPage />, id: 5 },
-        { link: "/contactus", element: <ContactUsPage />, id: 6 },
-        { link: "/aboutus", element: <AboutUsPage />, id: 7 },
-        { link: "/cart", element: <CartPage />, id: 8 },
-    ];
+  const PUBLIC_ROUTES = [
+    { link: "/", element: <HomePage />, id: 1 },
+    { link: "/auth", element: <AuthPage />, id: 2 },
+    { link: "/products", element: <ProductPage />, id: 3 },
+    { link: "/products/:id", element: <ProductDetailsPage />, id: 4 },
+    { link: "*", element: <NotFoundPage />, id: 5 },
+    { link: "/contactus", element: <ContactUsPage />, id: 6 },
+    { link: "/aboutus", element: <AboutUsPage />, id: 7 },
+    { link: "/cart", element: <CartPage />, id: 8 },
+    { link: "/admin", element: <AdminPage />, id: 9 },
+    { link: "/edit/:id", element: <EditProductPage />, id: 10 },
+  ];
 
-    const PRIVATE_ROUTES = [
-        { link: "/admin", element: <AdminPage />, id: 9 },
-        { link: "/edit/:id", element: <EditProductPage />, id: 10 },
-    ];
+  const PRIVATE_ROUTES = [];
 
-    return (
-        <Routes>
-            {PUBLIC_ROUTES.map((item) => (
-                <Route path={item.link} element={item.element} key={item.id} />
-            ))}
-        </Routes>
-    );
+  return (
+    <Routes>
+      {PUBLIC_ROUTES.map((item) => (
+        <Route path={item.link} element={item.element} key={item.id} />
+      ))}
+    </Routes>
+  );
 };
 
 export default MainRoutes;
