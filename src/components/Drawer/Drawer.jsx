@@ -1,12 +1,18 @@
 import React from "react";
 import closeIcon from "../../assets/details/free-icon-cancel-151850.png";
 import Gun from "../../assets/guns/3a7a4b6a82d2dbe7283ea4d050fd36bd.jpg";
-const Drawer = () => {
+const Drawer = ({ setShowCart }) => {
   return (
     <div className="overlay overlayVisible">
       <div className="drawer-content">
         <h2 className="drawer-title">
-          Drawer <img className="drawer-close-btn" src={closeIcon} alt="" />
+          Drawer{" "}
+          <img
+            onClick={() => setShowCart(false)}
+            className="drawer-close-btn"
+            src={closeIcon}
+            alt=""
+          />
         </h2>
         <div className="drawer-product">
           <div className="product-info">
