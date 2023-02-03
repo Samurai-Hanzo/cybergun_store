@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProductItem from "./ProductItem";
-import { useSelector } from "react-redux";
+import { fetchProducts } from "../../store/productSlice";
+
+import { useDispatch, useSelector } from "react-redux";
 
 export default function ProductList() {
-  const products = useSelector((state) => state.products.products);
-  return (
-    <ul>
-      {products.length > 0 &&
-        products.map((product) => (
-          <ProductItem key={product.id} product={product} />
-        ))}
-    </ul>
-  );
+    const dispatch = useDispatch();
+    const products = useSelector((state) => state.products.products);
+    useEffect(() => {
+        dispatch(fetchProducts());
+    }, []);
+
+    return (
+        <div className="product-list">
+            {products.length > 0 &&
+                products.map((product) => (
+                    <ProductItem key={product.id} product={product} />
+                ))}
+        </div>
+    );
 }

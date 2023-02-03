@@ -8,11 +8,10 @@ import "./components/StoreHeader/StoreHeader.css";
 import "./components/Auth/auth.css";
 import "./components/Review/Rewiev.css";
 import "./components/Footer/footer.css";
-
+import "./components/Product/product_css/storeProductList.css";
 import "./components/Cart/cart.css";
 import "./components/ContactUs/contactus.css";
 import "./components/Footer/footer.css";
-// import "./components/Home/home.css";
 import "./components/Navbar/navbar.css";
 import "./components/NotFound/notfound.css";
 import "./components/Support/Support.css";
