@@ -1,89 +1,90 @@
 .product-list-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 420px;
 }
 
 .product-card {
-  max-width: 350px;
-  height: 200px;
-  border: 5px solid black;
-  position: relative;
-  margin: 50px;
+    max-width: 350px;
+    height: 200px;
+    border: 5px solid black;
+    position: relative;
+    margin: 50px;
 }
 .product-card:hover .effect {
-  height: 100%;
-  transition: 0.3s;
+    height: 100%;
+    transition: 0.3s;
 }
 
 .effect {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0;
-  overflow: hidden;
-  background: rgba(white, white, white, 0.5);
-  backdrop-filter: blur(8px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    background: rgba(white, white, white, 0.5);
+    backdrop-filter: blur(8px);
 }
 .product-card::before {
-  content: url(./assets/details/card_detail.svg);
-  position: absolute;
-  bottom: -167px;
-  left: -6.5px;
-  rotate: 180deg;
+    content: url(./assets/details/card_detail.svg);
+    position: absolute;
+    bottom: -157px;
+    left: -7.5px;
+    rotate: 180deg;
 }
 .product-card::after {
-  content: url(./assets/details/card_detail_2.svg);
-  position: absolute;
-  top: -18px;
-  right: -6.5px;
-  rotate: 180deg;
+    content: url(./assets/details/card_detail_2.svg);
+    position: absolute;
+    top: -18px;
+    right: -6.5px;
+    rotate: 180deg;
 }
 .info {
-  position: absolute;
-  bottom: -150px;
-  left: -5px;
-  background: black;
-  border: 5px solid black;
-  width: 100%;
-  height: 140px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    position: absolute;
+    bottom: -140px;
+    left: -5px;
+    background: black;
+    border: 5px solid black;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .card-image {
-  max-width: 100%;
+    max-width: 100%;
 }
 .card-name {
-  font-size: 30px;
-  color: white;
-  padding: 5px;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
 }
 .card-descr {
-  font-size: 20px;
-  color: white;
-  padding: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
 }
 .card-price {
-  font-size: 30px;
-  color: white;
-  padding: 5px;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
 }
 .card-type {
-  padding: 0 0 0 5px;
-  color: white;
+    padding: 0 0 0 5px;
+    color: white;
 }
 .icons {
-  color: black;
-  font-size: 40px;
-  padding: 10px;
+    color: black;
+    font-size: 40px;
+    padding: 10px;
 }
 .icons:hover {
-  color: white;
-  transition: 0.3s;
+    color: white;
+    transition: 0.3s;
 }

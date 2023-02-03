@@ -6,10 +6,10 @@ const AboutUs = () => {
     return (
         <div className="aboutus-content">
             <div className="aboutus-header">
-                <div class="header-image">
+                <div class="aboutus-image">
                     <img src={HeaderPic} alt="" />
                 </div>
-                <div class="header-description">
+                <div class="aboutus-description">
                     <div class="description-title-1">
                         <h2>ABOUT US</h2>
                         <p>

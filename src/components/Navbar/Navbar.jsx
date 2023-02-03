@@ -6,8 +6,8 @@ import { Button } from "@mui/material";
 import Drawer from "../Drawer/Drawer";
 
 const Navbar = () => {
-  const [showCart, setShowCart] = useState(false);
   const { user, handleLogOut } = useAuth();
+  const [showCart, setShowCart] = useState(false);
   return (
     <div className="container">
       {showCart ? <Drawer setShowCart={setShowCart} /> : null}
@@ -30,11 +30,8 @@ const Navbar = () => {
           >
             <span>About Us</span>
           </Link>
-          <Link
-            to="/support"
-            style={{ textDecoration: "none", color: "black" }}
-          >
-            <span>Support</span>
+          <Link to="/admin" style={{ textDecoration: "none", color: "black" }}>
+            <span>Admin</span>
           </Link>
         </div>
         <div className="login-wrapper">

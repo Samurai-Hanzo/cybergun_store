@@ -18,8 +18,8 @@ export default function AddProduct() {
     useEffect(() => {
         dispatch(fetchProducts());
     }, [dispatch]);
-    const handleClick = () => {
-        dispatch(
+    const handleClick = async () => {
+        await dispatch(
             addProductAsync({
                 type,
                 image,
