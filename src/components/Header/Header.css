@@ -1,28 +1,55 @@
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 150px;
+img {
+    width: 100%;
 }
-.header-pic {
-  width: 514px;
-  height: 285px;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 150px;
+
+.header-image {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 20px 40px 20px 40px;
 }
-.header-text-top {
-  margin-bottom: 157px;
+.header-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+    margin: 20px 40px 20px 40px;
 }
-.header-title {
-  font-size: 64px;
-  font-weight: normal;
+.description-title-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 450px;
 }
-.header-desc {
-  width: 420px;
-  font-size: 20px;
-  font-weight: regular;
+.description-title-1 h2 {
+    color: black;
+    font-size: 64px;
+    font-weight: 100;
+}
+.description-title-1 p {
+    color: black;
+    font-size: 16px;
+    font-weight: 100;
+}
+.description-title-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 450px;
+}
+.description-title-2 h2 {
+    color: black;
+    font-size: 64px;
+    font-weight: 100;
+}
+.description-title-2 p {
+    color: black;
+    font-size: 16px;
+    font-weight: 100;
 }

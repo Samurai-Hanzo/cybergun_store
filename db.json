@@ -1,12 +1,31 @@
 {
-  "products": [
-    {
-      "type": "",
-      "image": "",
-      "descr": "",
-      "title": "",
-      "price": "",
-      "id": 1
-    }
-  ]
+    "products": [
+        {
+            "type": "",
+            "image": "",
+            "descr": "",
+            "title": "mira",
+            "price": "hvatit",
+            "id": 2
+        },
+        {
+            "type": "https://ltdfoto.ru/images/2023/02/02/gun-7.png",
+            "image": "https://ltdfoto.ru/images/2023/02/02/gun-7.png",
+            "descr": "qwe",
+            "title": "qwe",
+            "price": "qwe",
+            "id": 3
+        },
+        {
+            "type": "sdsdsd",
+            "image": "sdsdsdsdsds",
+            "descr": "sdsdsd",
+            "title": "asdasd",
+            "price": "dasdasd",
+            "id": 4,
+            "title": "",
+            "price": "",
+            "id": 1
+        }
+    ]
 }
