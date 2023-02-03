@@ -30,10 +30,10 @@ const Navbar = () => {
                         <span>About Us</span>
                     </Link>
                     <Link
-                        to="/support"
+                        to="/admin"
                         style={{ textDecoration: "none", color: "black" }}
                     >
-                        <span>Support</span>
+                        <span>Admin</span>
                     </Link>
                 </div>
                 <div className="login-wrapper">
