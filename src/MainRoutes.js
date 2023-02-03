@@ -11,6 +11,7 @@ import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
 import { Route, Routes } from "react-router-dom";
 import { useAuth } from "./contexts/AuthContextProvider";
+import Support from "./components/Support/Support";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -22,6 +23,8 @@ const MainRoutes = () => {
     { link: "/contactus", element: <ContactUsPage />, id: 6 },
     { link: "/aboutus", element: <AboutUsPage />, id: 7 },
     { link: "/cart", element: <CartPage />, id: 8 },
+    { link: "/support", element: <Support />, id: 8 },
+
     { link: "/admin", element: <AdminPage />, id: 9 },
     { link: "/edit/:id", element: <EditProductPage />, id: 10 },
   ];

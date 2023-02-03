@@ -19,54 +19,24 @@ import {
   randomUpdatedDate,
   randomId,
 } from "@mui/x-data-grid-generator";
-
-const initialRows = [
-  {
-    id: randomId(),
-    name: randomTraderName(),
-    age: 25,
-    dateCreated: randomCreatedDate(),
-    lastLogin: randomUpdatedDate(),
-  },
-  {
-    id: randomId(),
-    name: randomTraderName(),
-    age: 36,
-    dateCreated: randomCreatedDate(),
-    lastLogin: randomUpdatedDate(),
-  },
-  {
-    id: randomId(),
-    name: randomTraderName(),
-    age: 19,
-    dateCreated: randomCreatedDate(),
-    lastLogin: randomUpdatedDate(),
-  },
-  {
-    id: randomId(),
-    name: randomTraderName(),
-    age: 28,
-    dateCreated: randomCreatedDate(),
-    lastLogin: randomUpdatedDate(),
-  },
-  {
-    id: randomId(),
-    name: randomTraderName(),
-    age: 23,
-    dateCreated: randomCreatedDate(),
-    lastLogin: randomUpdatedDate(),
-  },
-];
+import {
+  deleteProduct,
+  editProductAsync,
+  removeProduct,
+} from "../../store/productSlice";
 
 function EditToolbar(props) {
   const { setRows, setRowModesModel } = props;
 
   const handleClick = () => {
     const id = randomId();
-    setRows((oldRows) => [...oldRows, { id, name: "", age: "", isNew: true }]);
+    setRows((oldRows) => {
+      console.log(oldRows, "old");
+      return [...oldRows, { id, title: "", descr: "", price: "", isNew: true }];
+    });
     setRowModesModel((oldModel) => ({
       ...oldModel,
-      [id]: { mode: GridRowModes.Edit, fieldToFocus: "name" },
+      [id]: { mode: GridRowModes.Edit, fieldToFocus: "type" },
     }));
   };
 
@@ -85,8 +55,22 @@ EditToolbar.propTypes = {
 };
 
 export default function FullFeaturedCrudGrid() {
-  const [rows, setRows] = React.useState(initialRows);
-  const [rowModesModel, setRowModesModel] = React.useState({});
+  const [rows, setRows] = React.useState([
+    {
+      type: "",
+      descr: "HII",
+      title: "HII",
+      price: "134",
+      id: 1,
+    },
+  ]);
+  const [rowModesModel, setRowModesModel] = React.useState({
+    type: "",
+    descr: "HII",
+    title: "HII",
+    price: "134",
+    id: 1,
+  });
 
   const handleRowEditStart = (params, event) => {
     event.defaultMuiPrevented = true;
@@ -127,18 +111,28 @@ export default function FullFeaturedCrudGrid() {
   };
 
   const columns = [
-    { field: "name", headerName: "Name", width: 180, editable: true },
-    { field: "age", headerName: "Age", type: "number", editable: true },
+    {
+      field: "title",
+      headerName: "PRODUCT NAME",
+      width: 180,
+      editable: true,
+    },
+    {
+      field: "descr",
+      headerName: "PRODUCT DESC",
+      width: 180,
+      editable: true,
+    },
     {
       field: "dateCreated",
-      headerName: "Date Created",
+      headerName: "DATE CREATED",
       type: "date",
       width: 180,
       editable: true,
     },
     {
-      field: "lastLogin",
-      headerName: "Last Login",
+      field: "price",
+      headerName: "PRICE",
       type: "dateTime",
       width: 220,
       editable: true,
@@ -180,7 +174,7 @@ export default function FullFeaturedCrudGrid() {
           <GridActionsCellItem
             icon={<DeleteIcon />}
             label="Delete"
-            onClick={handleDeleteClick(id)}
+            onClick={() => removeProduct(id)}
             color="inherit"
           />,
         ];
@@ -211,7 +205,10 @@ export default function FullFeaturedCrudGrid() {
         columns={columns}
         editMode="row"
         rowModesModel={rowModesModel}
-        onRowModesModelChange={(newModel) => setRowModesModel(newModel)}
+        onRowModesModelChange={(newModel) => {
+          console.log(newModel, "new");
+          setRowModesModel(newModel);
+        }}
         onRowEditStart={handleRowEditStart}
         onRowEditStop={handleRowEditStop}
         processRowUpdate={processRowUpdate}

@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 
 import AddProduct from "./components/Product/AddProduct";
 import ProductList from "./components/Product/ProductList";
+import AdminTable from "./components/AdminTable/AdminTable";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 import "./App.css";
 import ProductItem from "./components/Product/ProductItem";
@@ -11,6 +14,8 @@ import {
   fetchProducts,
 } from "./store/productSlice";
 import { useDispatch, useSelector } from "react-redux";
+import Support from "./components/Support/Support";
+import MainRoutes from "./MainRoutes";
 
 function App() {
   const [title, setTitle] = useState("");
@@ -46,7 +51,12 @@ function App() {
   };
   return (
     <div className="App">
-      <AddProduct
+      <Navbar />
+      <MainRoutes />
+      <Footer />
+
+      {/* <AdminTable /> */}
+      {/* <AddProduct
         title={title}
         image={image}
         price={price}
@@ -59,9 +69,9 @@ function App() {
         setType={setType}
         addProduct={addProduct}
         handleClick={handleClick}
-      />
+      /> */}
 
-      {status === "loading" && <h2>loading...</h2>}
+      {/* {status === "loading" && <h2>loading...</h2>}
       {error && (
         <h2>
           {" "}
@@ -70,7 +80,7 @@ function App() {
         </h2>
       )}
 
-      <ProductList />
+      <ProductList /> */}
     </div>
   );
 }
