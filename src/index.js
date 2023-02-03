@@ -16,6 +16,7 @@ import "./components/Home/home.css";
 import "./components/Navbar/navbar.css";
 import "./components/NotFound/notfound.css";
 import "./components/Support/Support.css";
+import "./components/Drawer/Drawer.css";
 import "./components/Product/product_css/addProduct.css";
 import "./components/Product/product_css/editProduct.css";
 import "./components/Product/product_css/productCard.css";

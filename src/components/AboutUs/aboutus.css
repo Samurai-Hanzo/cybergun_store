@@ -11,8 +11,8 @@
   align-items: center;
 }
 .aboutus-img {
-  width: 514px;
-  height: 285px;
+  max-width: 514px;
+  width: 100%;
 }
 .aboutus-title {
   font-size: 64px;
@@ -20,7 +20,8 @@
   margin: 0;
 }
 .aboutus-desc {
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   font-size: 20px;
   font-weight: regular;
 }
@@ -40,5 +41,22 @@
 }
 
 .aboutus-gun {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+@media (max-width: 1256px) {
+  .aboutus-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 951px) {
+  .aboutus-header {
+    display: block;
+    text-align: center;
+  }
+  .aboutus-title {
+    margin-top: 30px;
+  }
 }
