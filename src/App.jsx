@@ -4,13 +4,13 @@ import MainRoutes from "./MainRoutes";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-    return (
-        <>
-            <Navbar />
-            <MainRoutes />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <MainRoutes />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
