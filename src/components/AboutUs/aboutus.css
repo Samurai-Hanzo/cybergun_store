@@ -2,28 +2,32 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 30px;
 }
 
 .aboutus-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
-.aboutus-img {
-  max-width: 514px;
-  width: 100%;
+.aboutus-image {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: 20px;
 }
 .aboutus-title {
   font-size: 64px;
   font-weight: normal;
   margin: 0;
 }
-.aboutus-desc {
-  max-width: 420px;
-  width: 100%;
-  font-size: 20px;
-  font-weight: regular;
+.aboutus-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+  margin: 20px;
 }
 .aboutus-text {
   max-width: 1200px;

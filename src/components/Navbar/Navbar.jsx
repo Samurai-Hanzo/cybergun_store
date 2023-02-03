@@ -4,44 +4,62 @@ import CartLogo from "../../assets/details/shopping-cart.png";
 import { useAuth } from "../../contexts/AuthContextProvider";
 
 const Navbar = () => {
-  const { user, handleLogOut } = useAuth();
-  return (
-    <div className="container">
-      <div className="navbar-wrapper">
-        <div className="logo-wrapper">
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <span className="logo">cybergun</span>
-          </Link>
-        </div>
-        <div className="menu-wrapper">
-          <Link to="/products" style={{ textDecoration: "none" }}>
-            <span>Store</span>
-          </Link>
-          <Link to="/aboutus" style={{ textDecoration: "none" }}>
-            <span>About Us</span>
-          </Link>
-          <Link to="/support" style={{ textDecoration: "none" }}>
-            <span>Support</span>
-          </Link>
-        </div>
-        <div className="login-wrapper">
-          {user?.email ? (
-            <span onClick={handleLogOut}>Log out</span>
-          ) : (
-            <Link to="/auth" style={{ textDecoration: "none" }}>
-              <span>Log In</span>
-            </Link>
-          )}
+    const { user, handleLogOut } = useAuth();
+    return (
+        <div className="container">
+            <div className="navbar-wrapper">
+                <div className="logo-wrapper">
+                    <Link
+                        to="/"
+                        style={{ textDecoration: "none", color: "black" }}
+                    >
+                        <span className="logo">cybergun</span>
+                    </Link>
+                </div>
+                <div className="menu-wrapper">
+                    <Link
+                        to="/products"
+                        style={{ textDecoration: "none", color: "black" }}
+                    >
+                        <span>Store</span>
+                    </Link>
+                    <Link
+                        to="/aboutus"
+                        style={{ textDecoration: "none", color: "black" }}
+                    >
+                        <span>About Us</span>
+                    </Link>
+                    <Link
+                        to="/support"
+                        style={{ textDecoration: "none", color: "black" }}
+                    >
+                        <span>Support</span>
+                    </Link>
+                </div>
+                <div className="login-wrapper">
+                    {user?.email ? (
+                        <span onClick={handleLogOut}>Log out</span>
+                    ) : (
+                        <Link
+                            to="/auth"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
+                            <span>Log In</span>
+                        </Link>
+                    )}
 
-          <div className="cart-icon-wrapper">
-            <Link to="/cart" style={{ textDecoration: "none" }}>
-              <img className="cart-icon" src={CartLogo} alt="" />
-            </Link>
-          </div>
+                    <div className="cart-icon-wrapper">
+                        <Link
+                            to="/cart"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
+                            <img className="cart-icon" src={CartLogo} alt="" />
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Navbar;
