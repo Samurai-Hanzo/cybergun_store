@@ -1,3 +1,12 @@
 {
-  "products": []
+  "products": [
+    {
+      "type": "qwerty",
+      "image": "https://i.pinimg.com/564x/79/c7/25/79c72584911600fe83e946f22387f6e9.jpg",
+      "descr": "qwertyuiop[';lkjhgfds",
+      "title": "qwerty",
+      "price": "123456",
+      "id": 1
+    }
+  ]
 }
