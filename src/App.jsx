@@ -11,8 +11,12 @@ import {
   fetchProducts,
 } from "./store/productSlice";
 import { useDispatch, useSelector } from "react-redux";
+import Modal from "./components/modal/Modal";
 
 function App() {
+  //!
+  const { modal } = useSelector((store) => store.products);
+
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
@@ -71,6 +75,7 @@ function App() {
       )}
 
       <ProductList />
+      {modal ? <Modal /> : ""}
     </div>
   );
 }
