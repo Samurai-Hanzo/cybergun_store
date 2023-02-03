@@ -17,10 +17,10 @@ const Navbar = () => {
           <Link to="/products" style={{ textDecoration: "none" }}>
             <span>Store</span>
           </Link>
-          <Link to="/contactus" style={{ textDecoration: "none" }}>
-            <span>Contact Us</span>
+          <Link to="/aboutus" style={{ textDecoration: "none" }}>
+            <span>About Us</span>
           </Link>
-          <Link to="/auth" style={{ textDecoration: "none" }}>
+          <Link to="/support" style={{ textDecoration: "none" }}>
             <span>Support</span>
           </Link>
         </div>

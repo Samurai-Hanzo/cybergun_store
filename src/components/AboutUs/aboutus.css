@@ -1,5 +1,44 @@
-.product-card {
-    max-width: 350px;
-    height: 290px;
-    border: 5px solid black;
+.aboutus-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.aboutus-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutus-img {
+  width: 514px;
+  height: 285px;
+}
+.aboutus-title {
+  font-size: 64px;
+  font-weight: normal;
+  margin: 0;
+}
+.aboutus-desc {
+  width: 420px;
+  font-size: 20px;
+  font-weight: regular;
+}
+.aboutus-text {
+  max-width: 1200px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: regular;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.aboutus-gun-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutus-gun {
+  width: 1000px;
 }
