@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import Review from "../components/Review/Review";
 import Video from "../components/Video/Video";
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
         <div>
             <Header />
             <Video />
+            <Review />
         </div>
     );
 };

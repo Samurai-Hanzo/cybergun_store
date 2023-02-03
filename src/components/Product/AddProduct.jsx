@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addProductAsync, fetchProducts } from "../../store/productSlice";
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 
@@ -37,18 +37,16 @@ export default function AddProduct() {
         setPrice("");
     };
 
-    {
-        status === "loading" && <h2>loading...</h2>;
-    }
-    {
-        error && (
-            <h2>
-                {" "}
-                чел у тя ошибка из за {"=>"}
-                {error}
-            </h2>
-        );
-    }
+    status === "loading" && <h2>loading...</h2>;
+
+    error && (
+        <h2>
+            {" "}
+            чел у тя ошибка из за {"=>"}
+            {error}
+        </h2>
+    );
+
     return (
         <div className="add-product">
             <h1 className="auth-titile">ADD PRODUCT</h1>
