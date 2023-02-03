@@ -52,7 +52,7 @@ export const addProductAsync = createAsyncThunk(
   }
 );
 
-export const editOneProductAsync = createAsyncThunk(
+export const getOneProductAsync = createAsyncThunk(
   "products/editOneProductAsync",
   async function (id, { rejectWithValue, dispatch }) {
     const res = await fetch(`http://localhost:8000/products/${id}`);
@@ -113,6 +113,9 @@ const productSlice = createSlice({
       );
     },
     editProduct(state, action) {},
+    showModal(state, action) {
+      state.modal = action.payload;
+    },
   },
 
   extraReducers: {
@@ -126,12 +129,13 @@ const productSlice = createSlice({
     },
     [fetchProducts.rejected]: setError,
     [removeProduct.rejected]: setError,
-    [editOneProductAsync.fulfilled]: (state, action) => {
+    [getOneProductAsync.fulfilled]: (state, action) => {
       state.oneProduct = action.payload;
     },
   },
 });
 
-export const { addProduct, deleteProduct, editProduct } = productSlice.actions;
+export const { addProduct, deleteProduct, editProduct, showModal } =
+  productSlice.actions;
 
 export default productSlice.reducer;
