@@ -1,5 +1,4 @@
 import React from "react";
-import "./Footer.scss";
 
 const Footer = () => {
     return (
@@ -7,32 +6,32 @@ const Footer = () => {
             <div className="container">
                 <div className="footerWrapper">
                     <div>
-                        <p className="fw600">Company</p>
-                        <p>About</p>
-                        <p>Blog</p>
-                        <p>Careers</p>
-                        <p>Contact Us</p>
+                        <p className="footer-text fw600">Company</p>
+                        <p className="footer-text">About</p>
+                        <p className="footer-text">Blog</p>
+                        <p className="footer-text">Careers</p>
+                        <p className="footer-text">Contact Us</p>
                     </div>
                     <div>
-                        <p className="fw600">Support</p>
-                        <p>Help Center</p>
-                        <p>Safety Center</p>
-                        <p>Community</p>
+                        <p className="footer-text fw600">Support</p>
+                        <p className="footer-text">Help Center</p>
+                        <p className="footer-text">Safety Center</p>
+                        <p className="footer-text">Community</p>
                     </div>
                     <div>
-                        <p className="fw600">Legal</p>
-                        <p>Cookies Policy</p>
-                        <p>Privacy Policy</p>
-                        <p>CTerms of Service</p>
+                        <p className="footer-text fw600">Legal</p>
+                        <p className="footer-text">Cookies Policy</p>
+                        <p className="footer-text">Privacy Policy</p>
+                        <p className="footer-text">CTerms of Service</p>
                     </div>
                     <div>
-                        <p className="fw600"> US</p>
+                        <p className="footer-text fw600"> US</p>
                         <div className="linksWrapper">
                             <div>
-                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
                             </div>
                             <div>
-                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
                             </div>
                             <div>
                                 <i class="fa-brands fa-youtube"></i>

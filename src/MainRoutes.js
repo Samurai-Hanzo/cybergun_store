@@ -13,6 +13,8 @@ import { Route, Routes } from "react-router-dom";
 import { useAuth } from "./contexts/AuthContextProvider";
 
 const MainRoutes = () => {
+    const { user } = useAuth();
+
     const PUBLIC_ROUTES = [
         { link: "/", element: <HomePage />, id: 1 },
         { link: "/auth", element: <AuthPage />, id: 2 },
@@ -34,6 +36,21 @@ const MainRoutes = () => {
             {PUBLIC_ROUTES.map((item) => (
                 <Route path={item.link} element={item.element} key={item.id} />
             ))}
+            {user
+                ? PRIVATE_ROUTES.map((item) => (
+                      <Route
+                          path={item.link}
+                          element={
+                              user.email === "admin@admin.com"
+                                  ? item.element
+                                  : null
+                          }
+                          key={item.id}
+                      />
+                  ))
+                : null}
+
+            {}
         </Routes>
     );
 };

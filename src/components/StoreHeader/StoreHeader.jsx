@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderPic from "../../assets/details/header-store.svg";
+import HeaderPic from "../../assets/details/header-store-pic.png";
 
 const StoreHeader = () => {
     return (

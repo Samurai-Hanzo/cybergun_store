@@ -24,13 +24,13 @@ const Navbar = () => {
                         <span>Store</span>
                     </Link>
                     <Link
-                        to="/contactus"
+                        to="/aboutus"
                         style={{ textDecoration: "none", color: "black" }}
                     >
-                        <span>Contact Us</span>
+                        <span>About Us</span>
                     </Link>
                     <Link
-                        to="/auth"
+                        to="/support"
                         style={{ textDecoration: "none", color: "black" }}
                     >
                         <span>Support</span>
