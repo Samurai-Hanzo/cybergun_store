@@ -5,17 +5,17 @@ import "./index.css";
 import "./components/AboutUs/aboutus.css";
 import "./components/Header/Header.css";
 import "./components/StoreHeader/StoreHeader.css";
-import "./components/Auth/auth.css";
+import "./components/Auth/Auth.css";
 import "./components/Review/Rewiev.css";
 import "./components/Footer/footer.css";
-
+import "./components/Product/product_css/storeProductList.css";
 import "./components/Cart/cart.css";
 import "./components/ContactUs/contactus.css";
 import "./components/Footer/footer.css";
-// import "./components/Home/home.css";
 import "./components/Navbar/navbar.css";
 import "./components/NotFound/notfound.css";
 import "./components/Support/Support.css";
+import "./components/Drawer/Drawer.css";
 import "./components/Product/product_css/addProduct.css";
 import "./components/Product/product_css/editProduct.css";
 import "./components/Product/product_css/productCard.css";
@@ -28,11 +28,11 @@ import store from "./store/";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <BrowserRouter>
-        <AuthContextProvider>
-            <Provider store={store}>
-                <App />
-            </Provider>
-        </AuthContextProvider>
-    </BrowserRouter>
+  <BrowserRouter>
+    <AuthContextProvider>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </AuthContextProvider>
+  </BrowserRouter>
 );

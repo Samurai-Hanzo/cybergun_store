@@ -1,4 +1,5 @@
-import React from "react";
+import Modal from "../modal/Modal";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getOneProductAsync,
@@ -7,6 +8,7 @@ import {
 } from "../../store/productSlice";
 
 export default function ProductItem({ product }) {
+  //   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
   const { modal } = useSelector((store) => store.products);
 
@@ -14,25 +16,30 @@ export default function ProductItem({ product }) {
     dispatch(getOneProductAsync(product.id));
     dispatch(showModal(!modal));
   };
+
   return (
-    <div class="product-list-section">
-      <div class="product-card">
-        <img class="card-image" src={product.image} alt="#" />
-        <div class="effect">
+    <div className="product-list-section">
+      {/* {showModal ? <Modal setShowModal={setShowModal} /> : null} */}
+      <div className="product-card">
+        <img className="card-image" src={product.image} alt="#" />
+        <div className="effect">
           <i
-            class="fa-solid fa-cart-shopping icons"
-            onClick={() => handleClick(product.id)}
+            className="fa-solid fa-pen icons"
+            onClick={
+              () => handleClick(product.id)
+              //   () => setShowModal(true)
+            }
           ></i>
           <i
-            class="fa-solid fa-heart icons"
+            className="fa-solid fa-trash icons"
             onClick={() => dispatch(removeProduct(product.id))} //! если че исправить
           ></i>
         </div>
-        <div class="info">
-          <span class="card-name">{product.title}</span>
-          <span class="card-descr">{product.descr}</span>
-          <span class="card-price">{product.price}</span>
-          <span class="card-type">{product.type}</span>
+        <div className="info">
+          <span className="card-name">{product.title}</span>
+          <span className="card-descr">{product.descr}</span>
+          <span className="card-price">{product.price}</span>
+          <span className="card-type">{product.type}</span>
         </div>
       </div>
     </div>

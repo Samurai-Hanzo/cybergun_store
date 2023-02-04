@@ -5,9 +5,6 @@
   /* margin-top: 150px; */
 }
 
-.support-header {
-}
-
 .support-title {
   font-size: 64px;
   font-weight: normal;
@@ -24,4 +21,10 @@
 
 .faq {
   margin-bottom: 80px;
+}
+
+@media (max-width: 1256px) {
+  .support-content {
+    padding: 20px;
+  }
 }

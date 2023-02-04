@@ -1,12 +1,12 @@
+import Drawer from "../components/Drawer/Drawer";
 import React from "react";
-import Cart from "../components/Cart/Cart";
 
 const CartPage = () => {
-    return (
-        <div>
-            Cart <Cart />
-        </div>
-    );
+  return (
+    <div>
+      Cart <Drawer />
+    </div>
+  );
 };
 
 export default CartPage;

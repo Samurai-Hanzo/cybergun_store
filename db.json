@@ -1,3 +1,12 @@
 {
-  "products": []
+  "products": [
+    {
+      "type": "qwert",
+      "image": "qwert",
+      "descr": "qwert",
+      "title": "qwerty",
+      "price": "1t",
+      "id": 1
+    }
+  ]
 }
