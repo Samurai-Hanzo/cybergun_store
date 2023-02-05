@@ -2,11 +2,11 @@ import Drawer from "../components/Drawer/Drawer";
 import React from "react";
 
 const CartPage = () => {
-  return (
-    <div>
-      Cart <Drawer />
-    </div>
-  );
+    return (
+        <div>
+            <Drawer />
+        </div>
+    );
 };
 
 export default CartPage;
