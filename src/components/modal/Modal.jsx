@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { editProductAsync, showModal } from "../../store/productSlice";
+import {
+  editProductAsync,
+  fetchProducts,
+  showModal,
+} from "../../store/productSlice";
 
 export default function Modal() {
   const [prodEdit, setProdEdit] = useState({});
@@ -23,11 +27,12 @@ export default function Modal() {
     console.log(prodEdit, 2);
 
     console.log(obj, 3);
-    dispatch(editProductAsync(obj.id));
   };
 
-  const handleClick = () => {
+  const handleClick = async () => {
     dispatch(showModal(!modal));
+    await dispatch(editProductAsync(prodEdit));
+    await dispatch(fetchProducts());
   };
 
   return (
@@ -63,7 +68,7 @@ export default function Modal() {
         name="price"
       />
 
-      <button onClick={() => handleClick(prodEdit.id)}>save edit</button>
+      <button onClick={() => handleClick(prodEdit)}>save edit</button>
     </div>
   );
 }

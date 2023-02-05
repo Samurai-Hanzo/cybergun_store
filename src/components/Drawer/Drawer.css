@@ -50,6 +50,7 @@
 .drawer-close-btn {
   width: 10px;
   height: 10px;
+  cursor: pointer;
 }
 .greenButton {
   font-size: 16px;
