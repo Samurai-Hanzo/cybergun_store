@@ -41,6 +41,7 @@ export default function ProductList() {
           width: "100%",
           display: "flex",
           justifyContent: "space-between",
+          alignItems: "center",
           margin: "0 auto",
         }}
       >
@@ -69,19 +70,15 @@ export default function ProductList() {
             >
               <FormControlLabel value="all" control={<Radio />} label="all" />
               <FormControlLabel
-                value="daily"
+                value="rifle"
                 control={<Radio />}
-                label="daily"
+                label="rifle"
               />
+              <FormControlLabel value="gun" control={<Radio />} label="gun" />
               <FormControlLabel
-                value="action"
+                value="machineGun"
                 control={<Radio />}
-                label="action"
-              />
-              <FormControlLabel
-                value="fantasy"
-                control={<Radio />}
-                label="fantasy"
+                label="machine gun"
               />
             </RadioGroup>
           </FormControl>
