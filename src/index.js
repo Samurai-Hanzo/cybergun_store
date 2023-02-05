@@ -21,6 +21,7 @@ import "./components/Product/product_css/editProduct.css";
 import "./components/Product/product_css/productCard.css";
 import "./components/Product/product_css/productDetails.css";
 import "./components/Product/product_css/productList.css";
+import "./components/modal/modal.css";
 import { BrowserRouter } from "react-router-dom";
 import AuthContextProvider from "./contexts/AuthContextProvider";
 import { Provider } from "react-redux";
