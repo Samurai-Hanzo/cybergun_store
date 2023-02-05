@@ -5,7 +5,7 @@ import "./index.css";
 import "./components/AboutUs/aboutus.css";
 import "./components/Header/Header.css";
 import "./components/StoreHeader/StoreHeader.css";
-import "./components/Auth/Auth.css";
+import "./components/Auth/auth.css";
 import "./components/Review/Rewiev.css";
 import "./components/Footer/footer.css";
 import "./components/Product/product_css/storeProductList.css";
@@ -21,6 +21,7 @@ import "./components/Product/product_css/editProduct.css";
 import "./components/Product/product_css/productCard.css";
 import "./components/Product/product_css/productDetails.css";
 import "./components/Product/product_css/productList.css";
+import "./components/modal/modal.css";
 import { BrowserRouter } from "react-router-dom";
 import AuthContextProvider from "./contexts/AuthContextProvider";
 import { Provider } from "react-redux";
@@ -28,11 +29,11 @@ import store from "./store/";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <AuthContextProvider>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </AuthContextProvider>
-  </BrowserRouter>
+    <BrowserRouter>
+        <AuthContextProvider>
+            <Provider store={store}>
+                <App />
+            </Provider>
+        </AuthContextProvider>
+    </BrowserRouter>
 );
