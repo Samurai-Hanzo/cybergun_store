@@ -7,6 +7,22 @@
       "title": "qwerty",
       "price": "1t",
       "id": 1
+    },
+    {
+      "type": "all",
+      "image": "https://i.pinimg.com/474x/4d/7b/fe/4d7bfeda13b04037735fcf5c5e7cd613.jpg",
+      "descr": "asdf",
+      "title": "qwerty",
+      "price": "3123",
+      "id": 2
+    },
+    {
+      "type": "jhgfdsa",
+      "image": "https://i.pinimg.com/474x/4d/7b/fe/4d7bfeda13b04037735fcf5c5e7cd613.jpg",
+      "descr": "234567890098765432",
+      "title": "sklasdj",
+      "price": "123456754",
+      "id": 3
     }
   ]
 }
