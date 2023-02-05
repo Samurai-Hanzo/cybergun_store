@@ -78,20 +78,20 @@ const PayPage = () => {
           />
         </RadioGroup>
       </FormControl>
-      {/* <Link to="/"> */}
-      <Button
-        onClick={handleClick}
-        sx={{
-          maxWidth: "400px",
-          width: "100%",
-          backgroundColor: "black",
-          color: "white",
-        }}
-        variant="contained"
-      >
-        BUY
-      </Button>
-      {/* </Link> */}
+      <Link to="/" className="blydskaya-btn">
+        <Button
+          onClick={handleClick}
+          sx={{
+            maxWidth: "400px",
+            width: "100%",
+            backgroundColor: "black",
+            color: "white",
+          }}
+          variant="contained"
+        >
+          BUY
+        </Button>
+      </Link>
     </Container>
   );
 };

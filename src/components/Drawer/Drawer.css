@@ -52,19 +52,6 @@
   height: 10px;
   cursor: pointer;
 }
-.greenButton {
-  font-size: 16px;
-  max-width: 390px;
-  width: 100%;
-  padding: 6px 3px;
-  border-radius: 5px;
-  border: none;
-  background-color: rgb(39, 39, 39);
-  color: white;
-}
-.greenButton:hover {
-  background-color: rgb(69, 69, 69);
-}
 
 .drawer-product {
   display: flex;
@@ -100,6 +87,16 @@
   border: none;
   background-color: rgb(39, 39, 39);
   color: white;
+}
+.blydskaya-btn {
+  max-width: 400px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.blydskaya-btn-hover:hover {
+  color: black;
+  background-color: white;
 }
 
 @media (max-width: 415px) {
