@@ -1,16 +1,19 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { API } from "../helpers/consts";
 
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async function (_, { rejectWithValue }) {
     try {
-      const res = await fetch("http://localhost:8000/products");
+      const res = await fetch(`${API}${window.location.search}`);
 
       if (!res.ok) {
         throw new Error("server error :(");
       }
 
       const data = await res.json();
+      const data = await res.json();
+      console.log(data, "data");
 
       return data;
     } catch (error) {

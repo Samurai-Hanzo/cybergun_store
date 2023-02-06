@@ -1,0 +1,24 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.not-found-header {
+    color: black;
+    font-size: 36px;
+}
+.error-title {
+    font-size: 130px;
+}
+.not-found-button {
+    background: black;
+    padding: 12px 64px;
+    color: white;
+    margin: 20px;
+    font-size: 26px;
+}
+.not-found-button:hover {
+    background: #2c2c2c;
+    transition: 0.3s;
+    cursor: pointer;
+}

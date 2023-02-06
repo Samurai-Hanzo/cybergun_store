@@ -1,4 +1,6 @@
+import { Button } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 import closeIcon from "../../assets/details/free-icon-cancel-151850.png";
 import Gun from "../../assets/guns/3a7a4b6a82d2dbe7283ea4d050fd36bd.jpg";
 const Drawer = ({ setShowCart, item }) => {
@@ -28,17 +30,24 @@ const Drawer = ({ setShowCart, item }) => {
         <div className="cartTotalBlock">
           <ul>
             <li>
-              <span>Итого:</span>
+              <span>Total:</span>
               <div></div>
             </li>
           </ul>
-          <button
-            //   disabled={isLoading}
-            //   onClick={onClickOrder}
-            className="greenButton"
-          >
-            Оформить заказ
-          </button>
+          <Link to="/pay" className="blydskaya-btn">
+            <Button
+              onClick={() => setShowCart(false)}
+              className="blydskaya-btn-hover"
+              sx={{
+                maxWidth: "400px",
+                width: "100%",
+                backgroundColor: "black",
+                color: "white",
+              }}
+            >
+              Checkout
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

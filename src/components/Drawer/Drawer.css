@@ -1,109 +1,106 @@
 .overlay {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.1s ease-out, visibility 0.1s ease-out;
-  overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-out, visibility 0.1s ease-out;
+    overflow: hidden;
 }
 
 .overlayVisible {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 .drawer {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .drawer-content {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  max-width: 420px;
-  width: 100%;
-  height: 100%;
-  right: 0;
-  top: 0;
-  background: #ffffff;
-  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  /* transform: translateX(100%); */
-  transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 420px;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    /* transform: translateX(100%); */
+    transition: transform 0.3s ease-out;
 }
 .items {
-  flex: 1;
-  overflow: auto;
-  margin-bottom: 40px;
+    flex: 1;
+    overflow: auto;
+    margin-bottom: 40px;
 }
 
 .drawer-title {
-  display: flex;
-  font-weight: normal;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    font-weight: normal;
+    justify-content: space-between;
+    align-items: center;
 }
 .drawer-close-btn {
-  width: 10px;
-  height: 10px;
-  cursor: pointer;
-}
-.greenButton {
-  font-size: 16px;
-  max-width: 390px;
-  width: 100%;
-  padding: 6px 3px;
-  border-radius: 5px;
-  border: none;
-  background-color: rgb(39, 39, 39);
-  color: white;
-}
-.greenButton:hover {
-  background-color: rgb(69, 69, 69);
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
 }
 
 .drawer-product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-info {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .product-price-wrapper {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .gun-pic {
-  border-radius: 5px;
-  max-width: 80px;
-  width: 100%;
-  margin-right: 10px;
+    border-radius: 5px;
+    max-width: 80px;
+    width: 100%;
+    margin-right: 10px;
 }
 .product-price {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .remove-btn {
-  font-size: 16px;
-  font-weight: bold;
-  width: 50px;
-  padding: 1px 3px 3px;
-  border-radius: 5px;
-  border: none;
-  background-color: rgb(39, 39, 39);
-  color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50px;
+    padding: 1px 3px 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.blydskaya-btn {
+    max-width: 400px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.blydskaya-btn-hover:hover {
+    color: black;
+    background-color: white;
 }
 
 @media (max-width: 415px) {
-  .drawer-product {
-    display: block;
-  }
+    .drawer-product {
+        display: block;
+    }
 }
