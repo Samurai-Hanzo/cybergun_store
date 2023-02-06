@@ -15,7 +15,7 @@
       "title": "1",
       "price": "asd",
       "id": 2,
-      "": "as"
+      "": "e"
     },
     {
       "type": "daily",
@@ -87,7 +87,8 @@
       "descr": "asd",
       "title": "asd",
       "price": "asd",
-      "id": 11
+      "id": 11,
+      "": "asdd"
     },
     {
       "type": "asd",
@@ -153,13 +154,6 @@
       "price": "asd",
       "id": 19
     },
-    {
-      "type": "ЕКУЦЙ",
-      "image": "https://i.pinimg.com/564x/a6/91/f3/a691f3fc1e4c7832563fcbb1fb8c39a1.jpg",
-      "descr": "ПАВЫАПРОЛОРПАВ",
-      "title": "ЧСМИРПАВ",
-      "price": "2345654321",
-      "id": 20
-    }
+
   ]
 }

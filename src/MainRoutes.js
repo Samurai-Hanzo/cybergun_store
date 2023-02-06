@@ -13,32 +13,34 @@ import { Route, Routes } from "react-router-dom";
 
 import Support from "./components/Support/Support";
 import PayPage from "./pages/PayPage";
+import { useAuth } from "./contexts/AuthContextProvider";
 
 const MainRoutes = () => {
-  const PUBLIC_ROUTES = [
-    { link: "/", element: <HomePage />, id: 1 },
-    { link: "/auth", element: <AuthPage />, id: 2 },
-    { link: "/products", element: <ProductPage />, id: 3 },
-    { link: "/products/:id", element: <ProductDetailsPage />, id: 4 },
-    { link: "*", element: <NotFoundPage />, id: 5 },
-    { link: "/contactus", element: <ContactUsPage />, id: 6 },
-    { link: "/aboutus", element: <AboutUsPage />, id: 7 },
-    { link: "/cart", element: <CartPage />, id: 8 },
-    { link: "/support", element: <Support />, id: 9 },
-    { link: "/pay", element: <PayPage />, id: 10 },
+    const { user } = useAuth();
 
-    { link: "/admin", element: <AdminPage />, id: 11 },
-    { link: "/edit/:id", element: <EditProductPage />, id: 12 },
-  ];
+    const PUBLIC_ROUTES = [
+        { link: "/", element: <HomePage />, id: 1 },
+        { link: "/auth", element: <AuthPage />, id: 2 },
+        { link: "/products", element: <ProductPage />, id: 3 },
+        { link: "/products/:id", element: <ProductDetailsPage />, id: 4 },
+        { link: "*", element: <NotFoundPage />, id: 5 },
+        { link: "/contactus", element: <ContactUsPage />, id: 6 },
+        { link: "/aboutus", element: <AboutUsPage />, id: 7 },
+        { link: "/cart", element: <CartPage />, id: 8 },
+        { link: "/support", element: <Support />, id: 9 },
+        { link: "/pay", element: <PayPage />, id: 10 },
 
-  const PRIVATE_ROUTES = [];
+        { link: "/edit/:id", element: <EditProductPage />, id: 12 },
+    ];
 
-  return (
-    <Routes>
-      {PUBLIC_ROUTES.map((item) => (
-        <Route path={item.link} element={item.element} key={item.id} />
-      ))}
-      {/* {user
+    const PRIVATE_ROUTES = [{ link: "/admin", element: <AdminPage />, id: 11 }];
+
+    return (
+        <Routes>
+            {PUBLIC_ROUTES.map((item) => (
+                <Route path={item.link} element={item.element} key={item.id} />
+            ))}
+            {user
                 ? PRIVATE_ROUTES.map((item) => (
                       <Route
                           path={item.link}
@@ -52,9 +54,9 @@ const MainRoutes = () => {
                   ))
                 : null}
 
-            {} */}
-    </Routes>
-  );
+            {}
+        </Routes>
+    );
 };
 
 export default MainRoutes;
