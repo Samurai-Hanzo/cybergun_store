@@ -1,11 +1,11 @@
 {
   "products": [
     {
-      "type": "daily",
-      "image": "https://lh3.googleusercontent.com/u7iwoNpF59oVF0Hv2efraCz0AHHxpYRcHy-So9u8XABteL1MiclFCuFBEGkQZzldkk8p9AY6nZKqXVe4pfa544Sto8bWVNDLd8XVVFiiOr-8snra7UZz1sinPkmiWxxWq4XAfSWzA_-4p-HHAPyLt6IvrJVJohP6HVWfvcPZ6Ih9z9FB-J0hFbonksdVw5AnRizRtyp4QpV1u5UH2LR2V0y3KtHFOOSdN4jpVVh5xko-4NTZbTYSoMAP0NgHT-5e1bVf3zLXtPKvqxecLUCrPN3jGVshA3TfYedrokzugygO2wtc7DLHC8E1WqE5Jq5E1Jqup0jXkecSI4ZKfw4rKnelFJM_VAZwkyyy7tXN4sVyk_WabA6dj2-vk9Re-zgRVqEZRLWIPSu9o_Zdjz3lERuD0oyMpgGr4astWtsFwsCNJQCvOYgzBj0xVbLHgyt1uOU5b-ZLBHviDMsz8XC2BbXh8cuNpsSpb0mHCPHe7_IorRsyx2Hv4HD-_r11BVj6xuD8TI7ixgHXMqN6DYdoJPgCS9hDV8BLfzbrZ2zOvAeBdxSQv9WRXEb11IzsolcOOzg4aKgv2blmA17QH8KE1fUXgBg-6-jzSOL19enBljIfyI7LqqDSJ2Ry0ZC0Ipu4cegImu6EoZWu7XivNPVSa51n1rbiqfmdu4-5uh4f7iOnqVohY9bNCiEtHRZyLY8Bf5JyniEvoR4Qf0e1C2MxfJNvLh1VpEXUfN0F4SpsA7-eUCmG0LVdNZhBskPD6nvZ0wqyNRrjxX1Sgx_ecY9QsMGdSBUd4rIfsHXjEESFvxnrFKsUk2uWnaAcX9DLNSJgNvLQcXzAAFTkWvBzxuFbuWLZNwbOPVdJfWFKwMnJGZ1uDkb8AeYy7LhsdVpATWTkr-JxTjcBVwvDp2MO86BOpCYJfF4iVuhqvWqn4pp1CwS0YRjKMeyarP7JPnwSXmJAaQqpaL1XlmhoAH3QARw=w1179-h663-no?authuser=1",
+      "type": "hell",
+      "image": "https://i.pinimg.com/564x/a6/91/f3/a691f3fc1e4c7832563fcbb1fb8c39a1.jpg",
       "descr": "asd",
-      "title": "a",
-      "price": "asd",
+      "title": "adfsdfs",
+      "price": "3443435",
       "id": 1
     },
     {
@@ -154,13 +154,6 @@
       "price": "asd",
       "id": 19
     },
-    {
-      "type": "gun",
-      "image": "https://lh3.googleusercontent.com/MWDK9nFkHInqqibu5o6aq8kZhZwpxSbXJ_qI53Zt9j78fW0pn2A_DC7pVzZDKhD46pWQ_cplmc4wFDKPdy1yPJhkV65GW3GeoEoBaNZZnkKcfVnhe8NZV1wffdug3fo0zsKQIytCMs8pZnv_KWXGDwjBPKacVGQBlOcI0mdc9g3Tl1IVlYAU2M74u9NEctrX38nCgBqMgDPNnUl-R4uLvwCH1UrEMianu1aKUnOCWpK_G2OR-isSG6XM-rSwHGO200FfzDP426ilFf4kcbe0CUpZLyhAj0XtHROrFaLQ1zUtLAgm4Md7g1mWIzjNK1eKJk6flMLNEnBmsj4jWmQ0xh1HYikHTmhmUSLDuznsnwie2d5FAqxffC5Mbq0su1c--c9m6Pv9FFdYRa0cbVhGO32gMs4vU5-buEu1n37aQvlfcGjq3DM1qMq-Qy-WnjKaRJAVmFHR486EmQYPDSNhFEaEQtDRtOGm1wJIKZ4qxtBKhpNIfzjnoAbXhgV8dkOSFfsPfgX9Fu5iuQldGO-4tO-Hm0sHoJDfEBciVA8QLMdXqqLQ-8hzz49TKwwyUVfyWLpj8bK5mDiQKagF-jUw2Y43nKQHhOT_oElZmunArN_EGzg9EljYhHJ0KfDC5zug6iyjYRvcqBf9wMKgS_DUXhD7iAwKoDecqKE0g8U350kZBq_4PawCR7py5sthZDd-cTAY60474CEusCmH9a9K5o5T_9tYPaRoF13vL9HAJx6kCdT5dimBiCapK2S71wAoRK8wDSJTDZuZRHXBddhhSg2XapGmkMNElNM3fgKMxW0Eygw9KQujbALExB0CKxOzvIuzNNYWLS0ZOUXonS8xSYWyEQMHQClrg9CyHsnWWv5-ZqOAO5GjElaSi_0Cor19HHNvq9uLjE8Q_JFn_JAWz2K45u85FnskP2U1OM4iRiSfH_u9wsoHw1dF7dHpbO0UqvFx7UXNgDMrFFXeLTw=w1179-h663-no?authuser=1",
-      "descr": "asd",
-      "title": "asd",
-      "price": "asd",
-      "id": 20
-    }
+
   ]
 }
