@@ -5,7 +5,7 @@ import "./index.css";
 import "./components/AboutUs/aboutus.css";
 import "./components/Header/Header.css";
 import "./components/StoreHeader/StoreHeader.css";
-import "./components/Auth/Auth.css";
+import "./components/Auth/auth.css";
 import "./components/Review/Rewiev.css";
 import "./components/Footer/footer.css";
 import "./components/Product/product_css/storeProductList.css";
@@ -30,13 +30,13 @@ import ProductContextProvider from "./contexts/ProductContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <AuthContextProvider>
-      <Provider store={store}>
-        <ProductContextProvider>
-          <App />
-        </ProductContextProvider>
-      </Provider>
-    </AuthContextProvider>
-  </BrowserRouter>
+    <BrowserRouter>
+        <AuthContextProvider>
+            <Provider store={store}>
+                <ProductContextProvider>
+                    <App />
+                </ProductContextProvider>
+            </Provider>
+        </AuthContextProvider>
+    </BrowserRouter>
 );
