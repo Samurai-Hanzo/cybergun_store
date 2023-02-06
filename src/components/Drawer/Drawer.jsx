@@ -1,7 +1,7 @@
 import React from "react";
 import closeIcon from "../../assets/details/free-icon-cancel-151850.png";
 import Gun from "../../assets/guns/3a7a4b6a82d2dbe7283ea4d050fd36bd.jpg";
-const Drawer = ({ setShowCart }) => {
+const Drawer = ({ setShowCart, item }) => {
   return (
     <div className="overlay overlayVisible">
       <div className="drawer-content">
@@ -17,10 +17,10 @@ const Drawer = ({ setShowCart }) => {
         <div className="drawer-product">
           <div className="product-info">
             <img className="gun-pic" src={Gun} alt="" />
-            <h3>product name</h3>
+            <h3>{item.title}</h3>
           </div>
           <div className="product-price-wrapper">
-            <p className="product-price">price</p>
+            <p className="product-price">{item.price}</p>
             <button className="remove-btn">remove</button>
           </div>
         </div>

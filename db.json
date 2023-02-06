@@ -1,12 +1,20 @@
 {
   "products": [
     {
-      "type": "qwert",
-      "image": "qwert",
-      "descr": "qwert",
-      "title": "qwerty",
-      "price": "1t",
-      "id": 1
+      "type": "dsdsd",
+      "image": "https://i.pinimg.com/236x/dd/7e/3c/dd7e3ce8d3ae298324dd4a4e911a6d55.jpg",
+      "descr": "dsdsds",
+      "title": "tae",
+      "price": "sasa",
+      "id": 2
+    },
+    {
+      "type": "111111",
+      "image": "https://i.pinimg.com/236x/dd/7e/3c/dd7e3ce8d3ae298324dd4a4e911a6d55.jpg",
+      "descr": "111",
+      "title": "111",
+      "price": "11111",
+      "id": 3
     }
   ]
 }
