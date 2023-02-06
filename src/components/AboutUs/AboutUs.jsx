@@ -13,33 +13,29 @@ const AboutUs = () => {
                     <div class="description-title-1">
                         <h2>ABOUT US</h2>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Minima dolore ad, atque tenetur illo tempore
-                            maxime quo quam eligendi, corrupti saepe
-                            necessitatibus provident voluptate illum iusto!
-                            Accusamus, suscipit. Sint, veniam?
+                            One of the first online firearms sellers and a major
+                            force in the market, Impact Guns was founded in 1997
+                            by 3 avid shooters. We saw (and still see) the need
+                            to provide access to the best and latest gear at the
+                            best prices to anyone anywhere with access to a
+                            computer or phone.
                         </p>
                     </div>
                 </div>
             </div>
             <p className="aboutus-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                obcaecati, dignissimos at doloremque eveniet dicta repudiandae
-                eaque fugit aperiam tempora odio aut veniam quaerat optio ad
-                accusamus dolor harum ratione eos nisi asperiores minima neque
-                repellendus iste. Quos magni libero perferendis facere odio iste
-                magnam maiores dicta. Error, reiciendis ipsa.
+                Our focus on firearms and shooting related equipment allows us
+                to buy in large quantities, and pass the savings to you.
+                Everyone who works at Impact, from the owners to the shipping
+                crew, are shooters first. We absolutely love what we do!
             </p>
             <div className="aboutus-gun-wrapper">
                 <img className="aboutus-gun" src={GunPic} alt="" />
             </div>
             <p className="aboutus-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                obcaecati, dignissimos at doloremque eveniet dicta repudiandae
-                eaque fugit aperiam tempora odio aut veniam quaerat optio ad
-                accusamus dolor harum ratione eos nisi asperiores minima neque
-                repellendus iste. Quos magni libero perferendis facere odio iste
-                magnam maiores dicta. Error, reiciendis ipsa.
+                A dedicated crew reviews and adds new items when found to
+                perform as advertised. If feedback indicates a product is not up
+                to expectations, we pull it.
             </p>
         </div>
     );

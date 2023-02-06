@@ -11,7 +11,7 @@
     height: 200px;
     border: 5px solid black;
     position: relative;
-    margin: 50px;
+    margin: 46px;
 }
 .product-card:hover .effect {
     height: 100%;
